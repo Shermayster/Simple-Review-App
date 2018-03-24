@@ -1,0 +1,21 @@
+<div class="card editor">
+  <div class="card-header">
+    <h4>Add Your Review</h4>
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <input id="name"
+        placeholder="Your name"
+        type="text"
+        [(ngModel)]="nameValue"
+        name="name"
+      >
+      <textarea class="form-control" name="comment" id="comment" cols="30" rows="3"
+        placeholder="Your comment"
+        [(ngModel)]="commentValue"
+        >
+      </textarea>
+      <button class="btn btn-primary" type="submit">{{edit ? 'Edit' : 'Add'}}</button>
+    </form>
+  </div>
+</div>

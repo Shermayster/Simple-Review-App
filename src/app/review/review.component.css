@@ -1,0 +1,16 @@
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-content {
+  margin-left: 5px;
+}
+
+.review-name, .review-comment {
+  width: 100%;
+}
+
+.review-name {
+  font-weight: bold;
+}

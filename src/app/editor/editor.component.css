@@ -1,0 +1,11 @@
+.editor .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor input, .editor textarea, .editor button {
+  margin-top: 5px;
+}
+.editor button {
+  width: 100%;
+}

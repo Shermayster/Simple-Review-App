@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1>User Reviews</h1>
+  <app-review [reviewList]="commentsList"
+  (deleteComment)="deleteComment($event)"
+  (editComment)="editComment($event)"
+  ></app-review>
+  <app-editor
+  (addComment)="updateCommentsList($event)"
+  (updateComment)="editCommentInList($event)"
+  [editComment]="editableComment"
+  ></app-editor>
+</div>
